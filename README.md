@@ -23,53 +23,42 @@ Antes de executar o projeto, certifique-se de ter:
 
 Acesse [http://localhost/phpmyadmin](http://localhost/phpmyadmin) e crie um novo banco chamado:
 
-Ou execute no console SQL:
-
-```sql
-CREATE DATABASE avaliacaonewton;
-
 ### 3. Configurar application.properties
 
-No arquivo src/main/resources/application.properties, configure as informações de acesso ao banco
-
 ### 🚀 Executando a Aplicação
-1. Inicie o MariaDB pelo XAMPP
+
+**1. Inicie o MariaDB pelo XAMPP**
 Verifique se o banco avaliacaonewton foi criado e está ativo.
 
-2. Rode a aplicação no seu IDE
-Execute a classe principal com a anotação @SpringBootApplication. Por padrão, a aplicação iniciará em:
-http://localhost:8080
+**2. Rode a aplicação no seu IDE**
+Execute a classe principal com a anotação @SpringBootApplication.
+A aplicação iniciará por padrão em:
 
-### 📮 Testando Endpoints 
+arduino
+Copiar
+Editar
+
+### 📮 Testando Endpoints
 Utilize o Postman ou outra ferramenta para testar os endpoints REST:
 
-Endpoints de Usuário
-POST /usuarios – Criar novo usuário
+**Endpoints de Usuário**
+> POST /usuarios – Criar novo usuário
 
-GET /usuarios – Listar usuários
+> GET /usuarios – Listar usuários
 
-PUT /usuarios/{id} – Atualizar usuário
+> PUT /usuarios/{id} – Atualizar usuário
 
-DELETE /usuarios/{id} – Deletar usuário
+> DELETE /usuarios/{id} – Deletar usuário
 
-Endpoints de Tarefa
-POST /tarefas – Criar nova tarefa
+**Endpoints de Tarefa**
 
-GET /tarefas – Listar tarefas
+> POST /tarefas – Criar nova tarefa
 
-PUT /tarefas/{id} – Atualizar tarefa
+> GET /tarefas – Listar tarefas
 
-DELETE /tarefas/{id} – Deletar tarefa
+> PUT /tarefas/{id} – Atualizar tarefa
 
--- Listar tabelas
-SHOW TABLES;
+> DELETE /tarefas/{id} – Deletar tarefa
 
--- Ver conteúdo da tabela de usuários
-SELECT * FROM usuarios;
-
--- Ver conteúdo da tabela de tarefas
-SELECT * FROM tarefas;
-
-✅ Considerações Finais
+### ✅ Considerações Finais
 Este projeto é uma base para aplicações com Spring Boot + MariaDB, usando arquitetura MVC. Pode ser facilmente expandido para incluir autenticação, relacionamentos mais complexos, e frontend.
-
